@@ -12,7 +12,11 @@ app.use(bodyParser.json());
 app.use('/', htmlRoutes);
 app.use('/api', apiRoutes);
 
-app.listen(3000, function() {
-    console.log('Started Friend Finder Server at port 3000...');
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 8000;
+}
+app.listen(process.env.PORT, function() {
+    console.log('Started Friend Finder Server at port' + process.env.PORT);
 });
 module.exports = app;
