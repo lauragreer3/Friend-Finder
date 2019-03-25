@@ -16,7 +16,7 @@ let port = process.env.PORT;
 if (port == null || port == "") {
     port = 8000;
 }
-app.listen(process.env.PORT, function() {
-    console.log('Started Friend Finder Server at port' + process.env.PORT);
+app.listen(port, function() {
+    console.log('Started Friend Finder Server at port' + port);
 });
 module.exports = app;
