@@ -1,8 +1,55 @@
-//data gets saved here as an array of objects with the format:
-/*
 {
-    "name":"Ahmed",
-    "photo":"photour1.jpg",
-    "scores":[5,1,4,6,7,8,5,3,1]
+  "all_friends": [
+    {
+      "name": "Ahmed",
+      "photo": "photour1.jpg",
+      "scores[]": [
+        5,
+        1,
+        4,
+        5,
+        5,
+        2,
+        5,
+        3,
+        1,
+        3
+      ],
+      "total_score": 34
+    },
+    {
+      "name": "Bobed",
+      "photo": "photour2.jpg",
+      "scores[]": [
+        3,
+        2,
+        5,
+        1,
+        2,
+        4,
+        2,
+        1,
+        4,
+        5
+      ],
+      "total_score": 29
+    },
+    {
+      "name": "Laura",
+      "photo": "pic",
+      "scores[]": [
+        "3",
+        "2",
+        "3",
+        "2",
+        "5",
+        "3",
+        "2",
+        "4",
+        "3",
+        "4"
+      ],
+      "total_score": 31
+    }
+  ]
 }
-*/

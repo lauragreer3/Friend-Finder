@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/lauragreer3/Friend-Finder#readme",
   "devDependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "path": "^0.12.7"
   }

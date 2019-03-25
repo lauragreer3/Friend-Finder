@@ -1,14 +1,19 @@
 var express = require('express');
+var path = require('path');
 var router = express.Router();
 
-//route 1: get route to / survey, displays survey.html
-router.get('', function(req, res) {
-    res.sendFile('../public.home.html');
+//route 1: catch-all route to home.html
+router.all('', function(req, res) {
+    res.sendFile(path.join(__dirname, '../public/home.html'));
 });
 
-//route 2: catch-all route to home.html
+router.get('/app/form/validate.js', function(req, res) {
+    res.sendFile(path.join(__dirname, '../form/validate.js'));
+});
+
+//route 2: get route to / survey, displays survey.html
 router.get('/survey', function(req, res) {
-    res.sendFile('../public/survey.html');
+    res.sendFile(path.join(__dirname,'../public/survey.html'));
 });
 
-modules.exports = router;
+module.exports = router;
