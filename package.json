@@ -20,9 +20,12 @@
     "url": "https://github.com/lauragreer3/Friend-Finder/issues"
   },
   "homepage": "https://github.com/lauragreer3/Friend-Finder#readme",
-  "devDependencies": {
+  "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
